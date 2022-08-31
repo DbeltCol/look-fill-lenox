@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <title>Only4u</title>
+  </head>
+  <body class="bg-light">
+    <style type="text/css">
+      .bg-yellowW360{
+        babackground: rgb(45,17,2);
+        background: linear-gradient(90deg, rgba(45,17,2,1) 0%, rgba(201,106,43,1) 35%, rgba(242,203,12,1) 100%);
+      }
+      .bg-header{
+        background-image: url(./assets/img/elementos.png);
+      }
+      .logo{
+        max-width: 100px;
+      }
+      .listLat{
+        height: 100vh;
+      }
+      .listLat li{
+        font-size: 25px;
+      }
+      .listLat  li a{
+        color: #8793a3;
+      }
+      .bloquecuerpo{
+        overflow: scroll;
+        height: 88vh;
+        padding-top: 50px;
+        overflow-x: hidden;
+      }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 2px;
+      }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: transparent; 
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: transparent;
+      }
+      .font13 {
+        font-size: 13px;
+      }
+      .titleWallet{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+      }
+      .titleWallet h2{
+        font-size: 12px;
+      }
+      .btn-outline-primary {
+        color: #C96A2B;
+        border-color: #C96A2B;
+      }
+      .btn-outline-primary:hover {
+        color: #fff;
+        background-color: #C96A2B;
+        border-color: #C96A2B;
+      }
+      .table td, .table th{
+        font-size: 13px;
+        vertical-align: middle;
+      }
+      @media (max-width: 768px){
+        .listLat{
+          height: auto;
+        }
+      }
+    </style>
+    <div class="container-fluid overflow-hidden m-0 p-0 vh-100" >
+      <div class="row overflow-auto m-0" >
+        <div class="bg-yellowW360">
+          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between text-white px-3 bg-header">
+            <a href="home.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 col-auto text-decoration-none" >
+              <img src="assets/img/logo.svg" class="img-fluid logo">
+            </a>
+            <div class="py-sm-3 my-sm-auto ms-auto ms-sm-0 flex-shrink-1">
+              <a href="/" class="d-flex align-items-center text-white text-decoration-none ">
+                <img src="assets/img/avatar.webp" alt="perfil" width="28" height="28" class="rounded-circle">
+                <span class="d-none d-sm-inline mx-1">Claudia</span>
+              </a>
+            </div>
+          </header>
+        </div>
+        <div class="col-12 col-md-1 px-0 d-flex sticky-top">
+          <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start text-white text-center">
+            <ul class="nav flex-sm-column flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 align-items-sm-start m-0 bg-white listLat m-0 p-0 pt-3 Small shadow" id="menu">
+              <li class="w-100 m-0"  tabindex="0" data-toggle="tooltip" title="Home">
+                <a href="home.html" class="w-100 px-4 py-4 d-block active" >
+                  <i class="mdi mdi-home-variant-outline"></i>
+                </a>
+              </li>
+              <li class="w-100 m-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Reconocimiento">
+                <a class="w-100 px-3 py-4 d-block" href="#" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal2" >
+                  <i class="mdi mdi-medal-outline"></i>
+                </a>
+              </li>
+              <li class="w-100 m-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Billetera">
+                <a class="w-100 px-3 py-4 d-block" href="billetera.html">
+                  <i class="mdi mdi-cash-multiple"></i>
+                </a>
+              </li>
+              <li class="w-100 m-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Beneficios y Premios ">
+                <a class="w-100 px-3 py-4 d-block" href="redime.html">
+                  <i class="mdi mdi-basket-outline"></i>
+                </a>
+              </li>
+              <li class="w-100 m-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Alertas">
+                <a class="w-100 px-3 py-4 d-block" href="#">
+                  <i class="mdi mdi-bell-outline"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col d-flex flex-column h-sm-100 bg-light bloquecuerpo">
+          <div class="minusMargin boxt-cont borderRadius w-95mb container">
+            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+              <ol class="breadcrumb font13">
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Billetera</li>
+              </ol>
+            </nav>
+            <div class="my-2">
+              <div class="row justify-content-md-center">
+                <div class="col-md-4">
+                  <div class="cardW shadow-sm  mb-2 bg-light borderRadius w-100">
+                    <span class="titleWallet w-100 d-block bg-success text-white p-2 lh-1 text-center" >
+                      <h2 class="m-0 p-0">Reconocimientos</h2>
+                    </span>
+                    <div class="d-flex align-items-center">
+                      <div class="p-3">
+                        <p class="m-0 p-0"><strong>50</strong></p>
+                        <p class="small m-0 p-0">Pts</p>
+                      </div>
+                      <div class="ms-auto me-4">
+                        <a href="redime.html"><i class="mdi mdi-chevron-double-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="cardW shadow-sm  mb-2 bg-light borderRadius w-100">
+                    <span class="titleWallet w-100 d-block bg-warning text-white p-2 lh-1 text-center" >
+                      <h2 class="m-0 p-0">Premios</h2>
+                    </span>
+                    <div class="d-flex align-items-center">
+                      <div class="p-3">
+                        <p class="m-0 p-0"><strong>4</strong></p>
+                        <p class="small m-0 p-0">Premios</p>
+                      </div>
+                      <div class="ms-auto me-4">
+                        <a href="redime.html"><i class="mdi mdi-chevron-double-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="cardW shadow-sm  mb-2 bg-light borderRadius w-100">
+                    <span class="titleWallet w-100 d-block bg-info text-white p-2 lh-1 text-center" >
+                      <h2 class="m-0 p-0">Beneficios</h2>
+                    </span>
+                    <div class="d-flex align-items-center">
+                      <div class="p-3">
+                        <p class="m-0 p-0"><strong>$50,000</strong></p>
+                        <p class="small m-0 p-0">Lorem Ipsum</p>
+                      </div>
+                      <div class="ms-auto me-4">
+                        <a href="redime.html"><i class="mdi mdi-chevron-double-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive mt-3">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Fecha</th>
+                      <th scope="col">Descripcion</th>
+                      <th scope="col">Tipo</th>
+                      <th scope="col">Monto</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>22/07/2022</td>
+                      <td><a href="/">Premio</a></td>
+                      <td>Televisor</td>
+                      <td>1</td>
+                      <td>
+                        <strong> Redimido </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>22/07/2022</td>
+                      <td><a href="/">Reconocimientos</a></td>
+                      <td>Puntos</td>
+                      <td>10 pts</td>
+                      <td>
+                        <strong> Redimido </strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>22/07/2022</td>
+                      <td><a href="/">Beneficios</a></td>
+                      <td></td>
+                      <td>10 pts</td>
+                      <td>
+                        <strong> Redimido </strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--fin row vh-100 overflow-auto -->
+    </div><!--fin container-fluid overflow-hidden -->
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

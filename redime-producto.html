@@ -1,0 +1,623 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <title>Only4u</title>
+  </head>
+  <body class="bg-light">
+    <style type="text/css">
+
+      .bg-yellowW360{
+        babackground: rgb(45,17,2);
+        background: linear-gradient(90deg, rgba(45,17,2,1) 0%, rgba(201,106,43,1) 35%, rgba(242,203,12,1) 100%);
+        
+      }
+      .bg-header{
+        background-image: url(./assets/img/elementos.png);
+
+      }
+      .logo{
+        max-width: 120px;
+      }
+    </style>
+    <div class="container-fluid overflow-hidden m-0 p-0 vh-100" >
+      <div class="row overflow-auto m-0" >
+        <div class="bg-yellowW360">
+          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between text-white px-3 bg-header">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 col-auto text-decoration-none" >
+              <img src="assets/img/logo.svg" class="img-fluid logo">
+            </a>
+            <div class="py-sm-2 my-sm-auto ms-auto ms-sm-0 flex-shrink-1">
+              <a href="/" class="d-flex align-items-center text-white text-decoration-none ">
+                <img src="https://github.com/mdo.png" alt="hugenerd" width="28" height="28" class="rounded-circle">
+                <span class="d-none d-sm-inline mx-1">Joe</span>
+              </a>
+            </div>
+          </header>
+        </div>
+        <!-- cuerpo-->
+        <style type="text/css">
+          .listLat{
+            height: 100vh;
+          }
+          .listLat li{
+            font-size: 25px;
+          }
+          .listLat  li a{
+            color: #8793a3;
+          }
+          .bloquecuerpo{
+            overflow: scroll;
+            height: 88vh;
+            padding-top: 50px;
+            overflow-x: hidden;
+          }
+          /* width */
+          ::-webkit-scrollbar {
+            width: 2px;
+          }
+          /* Track */
+          ::-webkit-scrollbar-track {
+            background: transparent; 
+          }
+
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: transparent; 
+          }
+
+          /* Handle on hover */
+          ::-webkit-scrollbar-thumb:hover {
+            background: transparent;
+          }
+          @media (max-width: 768px){
+            .listLat{
+              height: auto;
+            }
+          }
+        </style>
+        <div class="col-12 col-md-1 px-0 d-flex sticky-top">
+          <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start text-white text-center">
+           <ul class="nav flex-sm-column flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 align-items-sm-start m-0 bg-white listLat m-0 p-0 pt-3 Small shadow" id="menu">
+            <li class="w-100 m-0"  tabindex="0" data-toggle="tooltip" title="Home">
+              <a class="w-100 px-4 py-4 d-block active" >
+                <i class="mdi mdi-home-variant-outline"></i>
+              </a>
+            </li>
+            <li class="w-100 m-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Reconocimiento">
+              <a class="w-100 px-3 py-4 d-block" href="#" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal2" >
+                <i class="mdi mdi-medal-outline"></i>
+              </a>
+            </li>
+            <li class="w-100 m-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Billetera">
+              <a class="" href="billetera.html">
+                <i class="mdi mdi-cash-multiple"></i>
+              </a>
+            </li>
+            <li class="w-100 m-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Beneficios y Premios ">
+              <a class="w-100 px-3 py-4 d-block" href="redime.html">
+                <i class="mdi mdi-basket-outline"></i>
+              </a>
+            </li>
+            <li class="w-100 m-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Alertas">
+              <a class="w-100 px-3 py-4 d-block" href="#">
+                <i class="mdi mdi-bell-outline"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <style type="text/css">
+        .box-redime select, .box-redime input{
+          background-color: #f8f9fc!important;
+        }
+        .box-numer{
+          display: block;
+          font-size: 9px;
+          position: absolute;
+          top: -20px;
+          right: 0px;
+          background: red;
+          width: 18px;
+          height: 18px;
+          overflow: hidden;
+          border-radius: 50%;
+          padding: 9px 0;
+          text-align: center;
+          line-height: 0;
+          color: #fff;
+
+        }
+        .font24{
+          font-size: 36px;
+          line-height: 1;
+        }
+        .box-img{
+          width: 100%;
+          height: 250px;
+          overflow: hidden;
+          padding: 15px !important;
+        }
+        .tdcto, .puntoPrecio span{
+          color: #C96A2B;
+          font-weight: 700;
+        }
+        .tdescrip{
+          max-height: 40px;
+          overflow: hidden;
+          font-weight: 600;
+          font-size: 13px;
+          margin: 0;
+          line-height: 1;
+          color: #606060;
+        }
+        .puntoPrecio{
+          font-size: 11px;
+          max-height: 20px;
+          overflow: hidden;
+          margin: 2px 0;
+          color: #606060;
+        }
+        .antes{
+          color: #dbd6de;
+          font-weight: 700;
+          text-decoration: line-through;
+        }
+        .productoc h2:hover, .producto;hover p{
+          color: inherit;
+        }
+        .font13 {
+            font-size: 13px;
+          }
+          .titleWallet{
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+
+          }
+          .cate.active{
+            background-color: #C96A2B !important;
+            color: #fff;
+          }
+      </style>
+      <div class="col d-flex flex-column h-sm-100 bg-light bloquecuerpo">
+        <div class="minusMargin p-4 boxt-cont borderRadius w-95mb container">
+           <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+            <ol class="breadcrumb font13">
+              <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Billetera</li>
+            </ol>
+          </nav>
+          <div class="row box-redime">
+            <div class="col-md-5 p-2 order-md-1 order-2">
+              <div class="cardW shadow-sm p-3 mb-1 bg-light borderRadius w-100 text-center">
+                <select class="form-select border-0" aria-label="Default select example">
+                  <option selected>Explora por categorías</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 p-2 order-md-2 order-3">
+              <div class="cardW shadow-sm p-3 mb-1 bg-light borderRadius w-100 text-center">
+                <div class="input-group ">
+                  <input type="text" class="form-control border-0" placeholder="Encuentra tu producto" aria-describedby="basic-addon2">
+                  <span class="input-group-text border-0 bg-light" id="basic-addon2">
+                    <i class="mdi mdi-magnify"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1 p-2 order-md-3 order-1">
+              <div class="cardW shadow-sm p-3 mb-1 bg-light borderRadius w-100 text-center">
+                <a href="/" class="text-center position-relative">
+                  <i class="mdi mdi-cart-outline font24 "></i>
+                  <span class="box-numer">10</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-md-center mt-4 m-2">
+            <div class="col">
+              <a class="cardW shadow-sm p-2 mb-3 bg-light rounded-pill w-100 text-center cate active">
+                Todo
+              </a>
+            </div>
+            <div class="col">
+              <a class="cardW shadow-sm p-2 mb-3 bg-light rounded-pill w-100 text-center">
+                Electro
+              </a>
+            </div>
+            <div class="col">
+              <a class="cardW shadow-sm p-2 mb-3 bg-light rounded-pill w-100 text-center">
+                Tecnología
+              </a>
+            </div>
+            <div class="col">
+              <a class="cardW shadow-sm p-2 mb-3 bg-light rounded-pill w-100 text-center">
+                Salud y Belleza
+              </a>
+            </div>
+          </div>
+          <div class="row my-2">
+
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body p-4">
+
+                    <div class="row">
+
+                      <div class="col-lg-7">
+                        <h5 class="mb-3">
+                          <a href="#!" class="text-body">
+                            <i class="fas fa-long-arrow-alt-left me-2"></i>
+                          Continue shopping</a>
+                        </h5>
+                         <hr>
+
+                          <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div>
+                              <p class="mb-1">Shopping cart</p>
+                              <p class="mb-0">You have 4 items in your cart</p>
+                            </div>
+                            <div>
+                              <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!"
+                                class="text-body">price <i class="fas fa-angle-down mt-1"></i></a></p>
+                              </div>
+                            </div>
+
+
+                            <div class="card mb-3 mb-lg-0">
+                              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active text-center">
+                                    <div class="doc">
+                                      <div class="box">
+                                        <img src="https://nestordominguez.com/wp-content/uploads/2017/10/dinosaurios-grande.jpg" alt="Image did not load...">
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="..." class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="..." class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="col-lg-5">
+
+                            <div class="card bg-primary text-white rounded-3">
+                              <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                  <h5 class="mb-0">Card details</h5>
+                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                                  class="img-fluid rounded-3" style="width: 45px;" alt="Avatar">
+                                </div>
+
+                                <p class="small mb-2">Card type</p>
+                                <a href="#!" type="submit" class="text-white"><i
+                                  class="fab fa-cc-mastercard fa-2x me-2"></i></a>
+                                  <a href="#!" type="submit" class="text-white"><i
+                                    class="fab fa-cc-visa fa-2x me-2"></i></a>
+                                    <a href="#!" type="submit" class="text-white"><i
+                                      class="fab fa-cc-amex fa-2x me-2"></i></a>
+                                      <a href="#!" type="submit" class="text-white"><i class="fab fa-cc-paypal fa-2x"></i></a>
+
+                                      <form class="mt-4">
+                                        <div class="form-outline form-white mb-4">
+                                          <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                                          placeholder="Cardholder's Name" />
+                                          <label class="form-label" for="typeName">Cardholder's Name</label>
+                                        </div>
+
+                                        <div class="form-outline form-white mb-4">
+                                          <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                                          placeholder="1234 5678 9012 3457" minlength="19" maxlength="19" />
+                                          <label class="form-label" for="typeText">Card Number</label>
+                                        </div>
+
+                                        <div class="row mb-4">
+                                          <div class="col-md-6">
+                                            <div class="form-outline form-white">
+                                              <input type="text" id="typeExp" class="form-control form-control-lg"
+                                              placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" />
+                                              <label class="form-label" for="typeExp">Expiration</label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <div class="form-outline form-white">
+                                              <input type="password" id="typeText" class="form-control form-control-lg"
+                                              placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                                              <label class="form-label" for="typeText">Cvv</label>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                      </form>
+
+                                      <hr class="my-4">
+
+                                      <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Subtotal</p>
+                                        <p class="mb-2">$4798.00</p>
+                                      </div>
+
+                                      <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Shipping</p>
+                                        <p class="mb-2">$20.00</p>
+                                      </div>
+
+                                      <div class="d-flex justify-content-between mb-4">
+                                        <p class="mb-2">Total(Incl. taxes)</p>
+                                        <p class="mb-2">$4818.00</p>
+                                      </div>
+
+                                      <button type="button" class="btn btn-info btn-block btn-lg">
+                                        <div class="d-flex justify-content-between">
+                                          <span>$4818.00</span>
+                                          <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                                        </div>
+                                      </button>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row m-0">
+                      <div class="col-md-3 m-0 p-0 mb-3" style="border:1px solid transparent;" >
+                        <a href="\" class="bg-white d-block w-100 border pt-3 producto">
+                          <div class="box-img d-flex align-items-center">
+                            <img src="assets/img/53b04fd8c2bfd8d5b35eacad452163ba-product.jpg" class="img-fluid" alt="..." >
+                          </div>
+                          <div class="card-body mb-0">
+                            <h2 class="tdcto small">10% DCTO</h2>
+                            <p class="tdescrip" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="puntoPrecio">Desde <span>200</span> puntos + $288.700</p>
+                            <p class="puntoPrecio">Solo con puntos <span>31.650</span></p>
+                            <p class="antes lh-1">Antes 45.817 puntos</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-3 m-0 p-0  mb-3" style="border:1px solid transparent;" >
+                        <a href="\" class="bg-white d-block w-100 border pt-3 producto">
+                          <div class="box-img d-flex align-items-center">
+                            <img src="assets/img/53b04fd8c2bfd8d5b35eacad452163ba-product.jpg" class="img-fluid" alt="..." >
+                          </div>
+                          <div class="card-body mb-0">
+                            <h2 class="tdcto small">10% DCTO</h2>
+                            <p class="tdescrip" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="puntoPrecio">Desde <span>200</span> puntos + $288.700</p>
+                            <p class="puntoPrecio">Solo con puntos <span>31.650</span></p>
+                            <p class="antes lh-1">Antes 45.817 puntos</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-3 m-0 p-0  mb-3" style="border:1px solid transparent;" >
+                        <a href="\" class="bg-white d-block w-100 border pt-3 producto">
+                          <div class="box-img d-flex align-items-center">
+                            <img src="assets/img/53b04fd8c2bfd8d5b35eacad452163ba-product.jpg" class="img-fluid" alt="..." >
+                          </div>
+                          <div class="card-body mb-0">
+                            <h2 class="tdcto small">10% DCTO</h2>
+                            <p class="tdescrip" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="puntoPrecio">Desde <span>200</span> puntos + $288.700</p>
+                            <p class="puntoPrecio">Solo con puntos <span>31.650</span></p>
+                            <p class="antes lh-1">Antes 45.817 puntos</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-3 m-0 p-0  mb-3" style="border:1px solid transparent;" >
+                        <a href="\" class="bg-white d-block w-100 border pt-3 producto">
+                          <div class="box-img d-flex align-items-center">
+                            <img src="assets/img/53b04fd8c2bfd8d5b35eacad452163ba-product.jpg" class="img-fluid" alt="..." >
+                          </div>
+                          <div class="card-body mb-0">
+                            <h2 class="tdcto small">10% DCTO</h2>
+                            <p class="tdescrip" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="puntoPrecio">Desde <span>200</span> puntos + $288.700</p>
+                            <p class="puntoPrecio">Solo con puntos <span>31.650</span></p>
+                            <p class="antes lh-1">Antes 45.817 puntos</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div><!--fin row vh-100 overflow-auto -->
+              <div class="container-fluid overflow-hidden m-0 p-0"><!--fin container-fluid overflow-hidden -->
+
+
+                <!-- espacio para modales --->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-greyW360 pt-4">
+                      <div class="d-flex position-relative rounded-top bg-greyW360 p-2">
+                        <h5 class="mx-auto" id="exampleModalLabel2">
+                          <span>
+                            <i class="fa-solid fa-star"></i>
+                          </span>Nuevo Reconocimiento
+                        </h5>
+                        <div class="btno-cerrar rounded-circle">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                      <div class="modal-body bg-white">
+                        <h4 class="text-center mb-3">Escoge tu tipo de reconocimiento</h4>
+                        <div class="row">
+                          <div class="col-md text-center mb-3">
+                            <button class="btn-primary btn btn-sm px-3">
+                             <i class="mdi mdi-account-outline me-2"></i>
+                             Personal
+                           </button>
+                         </div>
+                         <div class="col-md text-center mb-3">
+                          <button class="btn-primary btn btn-sm px-3">
+                           <i class="mdi mdi-account-multiple-plus-outline me-2"></i>
+                           Equipo
+                         </button>
+                       </div>
+                     </div>
+                     <select class="form-select my-2" aria-label="Default select example">
+                      <option selected>--Seleciona--</option>
+                      <option value="1">Claudia Gomez</option>
+                      <option value="2">Carlos Perez</option>
+                      <option value="3">Jorge Diaz</option>
+                    </select>
+                    <hr>
+                    <div class="chip">
+                      <div class="chip-head">C</div>
+                      <div class="chip-content">Claudia Gomez</div>
+                      <div class="chip-close">
+                        <i class="mdi mdi-close-circle me-2"></i>
+                      </div>
+                    </div>
+                    <div class="chip">
+                      <div class="chip-head">C</div>
+                      <div class="chip-content">Claudia Gomez</div>
+                      <div class="chip-close">
+                        <i class="mdi mdi-close-circle me-2"></i>
+                      </div>
+                    </div>
+                    <hr>
+                    <select class="form-select my-2" aria-label="Default select example">
+                      <option selected>--Motivo--</option>
+                      <option value="1">Cumplimiento</option>
+                      <option value="2">Meritos</option>
+                      <option value="3">Cumpleaños</option>
+                    </select>
+                    <div class="d-grid gap-2 p-3">
+                      <button class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">Publicar</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-greyW360 pt-4">
+                <div class="d-flex position-relative rounded-top bg-greyW360 p-2">
+                  <h5 class="mx-auto" id="exampleModalLabel2">
+                    <span>
+                      <i class="fa-solid fa-star"></i>
+                    </span>Crear Publicacion
+                  </h5>
+                  <div class="btno-cerrar rounded-circle">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div>
+                      <textarea name="" class="w-100 border-0 bg-greyW360 textpubli" placeholder="Tu Publicacion aqui..."></textarea>
+                    </div>
+                    <div class="lineDv my-3"></div>
+                    <div class="control bg-light">
+                      <input class="file" id="file" type="file"/>
+                      <label for="file"><i class="fa-regular fa-image"></i> Agregar imagen</label>
+                    </div>
+                    <br><br>
+                    <div class="d-grid gap-2 p-3">
+                      <button class="btn btn-primary" type="button">Publicar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content bg-greyW360 pt-4">
+                <div class="d-flex position-relative rounded-top bg-greyW360 p-2">
+                  <h5 class="mx-auto text-center" id="exampleModalLabel2">
+                    <span>
+                      <i class="fa-solid fa-star"></i>
+                    </span>!!FELICITACIONES CLAUDIA!!<br>
+                    <span class="small">Recibiste un Reconocimiento de <strong>Recursos Humanos</strong></span>
+                  </h5>
+                  <div class="btno-cerrar rounded-circle">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="modal-body bg-white text-center">
+
+                  <div class="h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                      <div class="card border-0">
+                        <div class="card-body p-4 text-black">
+                          <div>
+                            <h4 class="m-0">Meta Cumplida</h4>
+                            <p>#MetaCumplida</p>
+
+                          </div>
+                          <div class="d-flex align-items-center mb-4">
+                            <div class="flex-shrink-0">
+                              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-2.webp"
+                              alt="Generic placeholder image" class="img-fluid rounded-circle border border-dark border-3"
+                              style="width: 70px;">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <div class="d-flex flex-row align-items-center mb-2">
+                                <p class="mb-0 me-2">@ClaudiaGomez</p>
+                              </div>
+                              <div>
+                               <p class="text-justify">
+                                Muchas gracias por el compromiso de todos los días. <strong>!sigamos cumpliendo las metas de la compañía!</strong>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+
+                        <button type="button" class="btn btn-primary btn-rounded btn-block b">
+                          Canjear tus 2.000 pts 
+                        </button>
+                        <button type="button" class="btn btn-outline-warning btn-rounded btn-block ">
+                          Ver Reconocimiento
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+        </body>
+        </html>
