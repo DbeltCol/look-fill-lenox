@@ -1,6 +1,9 @@
 :root{
-	--main-color:#C96A2B;
+	--main-color:#404041 ;
 	--white-color:#fff;
+}
+.text-primary{
+	color: var(--main-color)!important;
 }
 
 .btn-primary{

@@ -29,6 +29,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
+        <!-- Sidebar -->
         <ul class="navbar-nav bg-white sidebar sidebar-light accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
@@ -232,7 +233,7 @@ aria-labelledby="userDropdown">
     <div class="bg-w360 p-5" style="margin-botton:-30px">
       <!-- Page Heading -->
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-white">Minutas</h1>
+        <h1 class="h3 mb-0 text-white">Crear Registro Vehiculares</h1>
     </div>
 </div>
 
@@ -247,7 +248,7 @@ aria-labelledby="userDropdown">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Minutas del día</div>
+                            REGISTROS VEHICULARES DE HOY</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
                         </div>
                         <div class="col-auto">
@@ -270,24 +271,136 @@ aria-labelledby="userDropdown">
                 <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Crear Minuta</h6>
+            <!--             <h6 class="m-0 font-weight-bold text-primary">Crear Vehicular</h6> -->
                     </div>
                     <!-- Card Body -->
                     <div class="card-body">
                         <form class="user">
+
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
 
-                                    <label for=""><span class="text-danger"> *</span>Asunto</label>
-                                    <select name="asunto" id="" class="form-control form-control-user">
-                                        <option value="" selected>--Seleccione Asunto</option>
-                                        <option value="">Evento</option>
-                                        <option value="">Solicitud</option>
-                                        <option value="">Otro</option>
-                                    </select>
+                                    <label for=""><span class="text-danger"> *</span>Placa</label>
+                                    <input class="form-control form-control-user" type="text">
+                                </div>
+
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Destino</label>
+                                    <input class="form-control form-control-user" type="text">
                                 </div>
                
                             </div>
+
+                            <!--checklist-->
+
+                            <div class="form-group row">
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Espejos</label>
+                                    <select name="espejos" id="" class="form-control">
+                                        <option value="t">T</option>
+                                        <option value="nt">NT</option>
+                                        <option value="a">A</option>
+                                        <option value="be">BE</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Puertas</label>
+                                    <select name="espejos" id="" class="form-control">
+                                        <option value="t">T</option>
+                                        <option value="nt">NT</option>
+                                        <option value="a">A</option>
+                                        <option value="be">BE</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Radio Frontal</label>
+                                    <select name="espejos" id="" class="form-control">
+                                        <option value="t">T</option>
+                                        <option value="nt">NT</option>
+                                        <option value="a">A</option>
+                                        <option value="be">BE</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Vidrios</label>
+                                    <select name="espejos" id="" class="form-control">
+                                        <option value="t">T</option>
+                                        <option value="nt">NT</option>
+                                        <option value="a">A</option>
+                                        <option value="be">BE</option>
+                                    </select>
+                                </div>
+               
+
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Farola Stop</label>
+                                    <select name="espejos" id="" class="form-control">
+                                        <option value="t">T</option>
+                                        <option value="nt">NT</option>
+                                        <option value="a">A</option>
+                                        <option value="be">BE</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Rayones</label>
+                                    <select name="espejos" id="" class="form-control">
+                                        <option value="t">T</option>
+                                        <option value="nt">NT</option>
+                                        <option value="a">A</option>
+                                        <option value="be">BE</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Abolladuras</label>
+                                    <select name="espejos" id="" class="form-control">
+                                        <option value="t">T</option>
+                                        <option value="nt">NT</option>
+                                        <option value="a">A</option>
+                                        <option value="be">BE</option>
+                                    </select>
+                                </div>
+               
+
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Luces</label>
+                                    <select name="espejos" id="" class="form-control">
+                                        <option value="t">T</option>
+                                        <option value="nt">NT</option>
+                                        <option value="a">A</option>
+                                        <option value="be">BE</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+
+                                    <label for=""><span class="text-danger"> *</span>Antena</label>
+                                    <select name="espejos" id="" class="form-control">
+                                        <option value="t">T</option>
+                                        <option value="nt">NT</option>
+                                        <option value="a">A</option>
+                                        <option value="be">BE</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+
                             <div class="form-group row">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
                                 
@@ -296,8 +409,23 @@ aria-labelledby="userDropdown">
                                     <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
 
                                 </div>
-                        
                             </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-3 mb-sm-0">
+                                
+                                    <label for=""><span class="text-danger"> *</span>Firma</label>
+
+                                    <textarea name="" class="form-control" id="" cols="30" rows="5"></textarea>
+
+                                </div>
+                            </div>
+
+
+
+
+
+                        
                             <div class="text-center">
                                 <a href="login.html" class="btn btn-primary btn-user px-5 mb-4">
                                     Crear

@@ -29,42 +29,45 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
+        <!-- Sidebar -->
         <ul class="navbar-nav bg-white sidebar sidebar-light accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-text mx-3">
                     <img src="assets/img/logo.jpeg" class="img-fluid">
-                </div>
-            </a>
+              </div>
+          </a>
           <!-- Divider -->
           <hr class="sidebar-divider my-0">
 
           <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link" href="minuta.html">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Minutas</span>
-                </a>
-            </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link" href="visitantes.html">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Control de visitantes</span>
-                </a>
-            </li>
 
-        </ul>
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link" href="minuta.html">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Minutas</span>
+        </a>
+    </li>
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link" href="visitantes.html">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Control de visitantes</span>
+        </a>
+    </li>
+
+  </ul>
   <!-- End of Sidebar -->
 
   <!-- Content Wrapper -->
@@ -232,85 +235,116 @@ aria-labelledby="userDropdown">
     <div class="bg-w360 p-5" style="margin-botton:-30px">
       <!-- Page Heading -->
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-white">Minutas</h1>
+        <a
+        href="crear-salonsocial.html"
+        class="d-none d-sm-inline-block btn btn-sm btn-warning shadow-sm"
+        ><i class="fas fa-plus fa-sm text-white-50"></i> Crear Salón social</a>
     </div>
 </div>
 
-<div class="container" style="margin-top:-30px;">
+<div class="container-fluid" style="margin-top:-30px;">
 
-    <!-- Content Row -->
-    <div class="row">
-        <!-- Pending Requests Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Minutas del día</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+	<div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Listado de salón social</h6>
         </div>
-    </div>
-
-    <!-- Content Row -->
-
-    <div class="row">
-
-        <!-- Area Chart -->
-        <div class="col-xl-12 col-lg-12">
-            <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Crear Minuta</h6>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-body">
-                        <form class="user">
-                            <div class="form-group row">
-                                <div class="col-sm-6 mb-3 mb-sm-0">
-
-                                    <label for=""><span class="text-danger"> *</span>Asunto</label>
-                                    <select name="asunto" id="" class="form-control form-control-user">
-                                        <option value="" selected>--Seleccione Asunto</option>
-                                        <option value="">Evento</option>
-                                        <option value="">Solicitud</option>
-                                        <option value="">Otro</option>
-                                    </select>
-                                </div>
-               
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-12 mb-3 mb-sm-0">
-                                
-                                    <label for=""><span class="text-danger"> *</span>Anotación</label>
-
-                                    <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
-
-                                </div>
-                        
-                            </div>
-                            <div class="text-center">
-                                <a href="login.html" class="btn btn-primary btn-user px-5 mb-4">
-                                    Crear
-                                </a>
-                            </div>
-                        </form>
-                        <br>
-            
+        <!-- Card Body -->
+        <div class="card-body">
+            <form class="form-inline navbar-search mb-4">
+                <div class="input-group ms-auto">
+                    <input type="text" class="form-control bg-light border-0 small"
+                    placeholder="Search for..." aria-label="Search"
+                    aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search fa-sm"></i>
+                        </button>
                     </div>
                 </div>
-                   
+            </form>
+            <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
 
+                            <th scope="col">Código</th>
+                            <th scope="col">Nombre residente</th>
+                            <th scope="col"># Documento</th>
+                            <th scope="col">Torre / Apto</th>
+                            <th scope="col"># Celular</th>
+                            <th scope="col">Tipo de residente</th>
+                            <th scope="col">Fecha Reserva</th>
+                            <th scope="col">Horario inicial</th>
+                            <th scope="col">Horario final</th>
+                            <th scope="col"># Sillas</th>
+                            <th scope="col"># Mesas</th>
+                            <th scope="col">Soporte de pago</th>
+                            <th scope="col">Firma</th>
+                      
+                           
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A10105</td>
+                            <td>Camilo Jose Cetina</td>
+                            <td>1102547841</td>
+                            <td>T 4 Apto 108</td>
+                            <td>3102524541</td>
+                            <td>Propieratio</td>
+                            <td>05-09-22</td>
+                            <td>07:00:00</td>
+                            <td>08:00:00</td>
+                            <td>20</td>
+                            <td>5</td>
+                        
+                            <td><a href="">ver más</a></td>
+                            <td>N/A</td>
+                            <td></td>
+                   
+                      
+                     
+                 
+                        </tr>
+
+                    
+
+                        
+                    </tbody>
+                    <tfoot class="table-light">
+                        <tr>
+                        <td>s</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                   
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- end table -->
             </div>
+            <!-- end table responsive -->
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 
@@ -342,3 +376,6 @@ aria-labelledby="userDropdown">
 </body>
 
 </html>
+
+
+
